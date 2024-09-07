@@ -1,0 +1,7 @@
+<!-- <h1>Counter: {{ todosCounterNormal }}</h1> -->
+<h1>Counter: {{ todosCounter() }}</h1>
+<app-todo-list
+  [todos]="todos()"
+  (removeTodo)="removeTodo($event)"
+></app-todo-list>
+<button mat-raised-button (click)="addNewTodo()">Add New</button>
