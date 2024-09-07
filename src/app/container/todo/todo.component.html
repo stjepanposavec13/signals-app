@@ -1,0 +1,6 @@
+<h1>Counter: {{ todoStore.todosCount() }}</h1>
+<app-todo-list
+  [todos]="todoStore.todos()"
+  (removeTodo)="removeTodo($event)"
+></app-todo-list>
+<button mat-raised-button (click)="addNewTodo()">Add New</button>
