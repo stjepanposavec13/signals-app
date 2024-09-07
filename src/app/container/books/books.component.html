@@ -1,0 +1,5 @@
+<app-book-list [books]="" (removeBook)="removeBook($event)"></app-book-list>
+<div class="options">
+  <app-book-search (searchValueChanged)="bookSearch($event)"></app-book-search>
+  <button mat-raised-button (click)="addNewTodo()">Add New</button>
+</div>
